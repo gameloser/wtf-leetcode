@@ -41,7 +41,8 @@ class Permute47 {
 
     public static void main(String[] args) {
         Permute47 p = new Permute47();
-        System.out.println(p.permuteUnique(new int[]{1, 1, 3}));
+//        System.out.println(p.permuteUnique(new int[]{1, 1, 3}));
+        System.out.println(p.permuteUnique(new int[]{1, 1, 2, 2}));
     }
 
 }
