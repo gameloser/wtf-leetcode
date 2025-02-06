@@ -7,7 +7,7 @@ import java.util.List;
 class Subset90 {
     public List<List<Integer>> subsetsWithDup(int[] nums) {
         List<List<Integer>> res =  new ArrayList<>();
-        // sort, make sure the same values close together
+        // Algorithm.sort, make sure the same values close together
         Arrays.sort(nums);
         backtrack(nums, 0, new ArrayList<>(), res);
         return res;
