@@ -49,56 +49,45 @@ public class LongestIncreasingSubsequenceLIS300 {
     }*/
 
     // greedy + binary
-    // g[i]: length i+1 of IS for the smallest number
+    // f[i]: length of array end element of nums[i]
+    // g[i]: length i+1 of IS for the smallest number of end element
     public int lengthOfLIS(int[] nums) {
         List<Integer> g = new ArrayList<>();
         for (int num: nums) {
-            int j = binSearch(g, num);
+            int j = lower_bound_search(g, num);
+            if (j == g.size()) {
+                g.add(num);
+            } else {
+                g.set(j, num);
+            }
         }
-        return -1;
+        return g.size();
     }
 
-    public int binSearch(List<Integer> nums, int target) {
+    public int lower_bound_search(List<Integer> nums, int target) {
         int left = 0;
         int right = nums.size() - 1;
         while (left <= right) {
             int mid = left + (right - left) / 2;
-            if (nums.get(mid) == target) {
-                return mid;
+            if (nums.get(mid) >= target) {
+                right = mid - 1;
             } else if (nums.get(mid) < target) {
                 left = mid + 1;
-            } else if (nums.get(mid) > target) {
-                right = mid - 1;
             }
         }
-        return -1;
-    }
-
-    
-
-    private int lowerBound(List<Integer> g, int target) {
-        int left = -1, right = g.size(); // 开区间 (left, right)
-        while (left + 1 < right) { // 区间不为空
-            // 循环不变量：
-            // nums[left] < target
-            // nums[right] >= target
-            int mid = left + (right - left) / 2;
-            if (g.get(mid) < target) {
-                left = mid; // 范围缩小到 (mid, right)
-            } else {
-                right = mid; // 范围缩小到 (left, mid)
-            }
-        }
-        return right; // 或者 left+1
+        return left;
     }
 
     public static void main(String[] args) {
         LongestIncreasingSubsequenceLIS300 lis = new LongestIncreasingSubsequenceLIS300();
 //        System.out.println(lis.lengthOfLIS(new int[]{1,2,3,4,5,6,7,8,9}));
 
-//        System.out.println(lis.lengthOfLIS(new int[]{1,3,6,7,9,4,10,5,6}));
+        System.out.println(lis.lengthOfLIS(new int[]{10,9,2,5,3,7,101,18}));
 //        System.out.println(lis.lengthOfLIS(new int[]{0}));
-
-        System.out.println(lis.lowerBound(Arrays.asList(1,2,3,3,4,10), 8));
+//        List<Integer> nums = new ArrayList<>();
+//        nums.add(1);
+//        nums.add(2);
+//        nums.add(4);
+//        System.out.println(lis.lower_bound_search(nums, 5));
     }
 }
