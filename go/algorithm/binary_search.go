@@ -20,6 +20,7 @@ func BinarySearch(arr []int, target int) int {
 	return -1
 }
 
+// 二分查找大于等于某个数的第一个位置的功能
 // >= x
 // result range [0, length]
 func LeftBoundClose(arr []int, target int) int {
@@ -68,7 +69,7 @@ func LeftBoundOpen(arr []int, target int) int {
 }
 
 func main() {
-	arr := []int{2, 3, 3, 3, 3, 9}
+	arr := []int{1, 3, 3, 3, 3, 9}
 	//res := BinarySearch(arr, 3)
 	//fmt.Println(res)
 	//res = LeftBoundClose(arr, 3)
@@ -82,7 +83,7 @@ func main() {
 	//	return BinarySearch(arr[:i], 0) >= 0
 	//}))
 	fmt.Println(LeftBoundOpen(arr, 3))
-	fmt.Println(LeftBoundOpen(arr, 1))
+	fmt.Println(LeftBoundOpen(arr, 2))
 	fmt.Println(LeftBoundOpen(arr, 10))
 	fmt.Println(LeftBoundOpen(arr, 3+1) - 1)
 

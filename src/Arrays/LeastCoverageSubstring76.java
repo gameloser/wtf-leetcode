@@ -10,7 +10,7 @@ public class LeastCoverageSubstring76 {
         for(char c : t.toCharArray()){
             coverMap.put(c, coverMap.getOrDefault(c, 0) + 1);
         }
-        // [left, right) 左开右闭
+        // [left, right) 左闭右开
         int left = 0, right = 0;
         int valid = 0;
         // 最小覆盖字串 的起始索引和最小长度

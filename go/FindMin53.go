@@ -15,7 +15,7 @@ func findMin(nums []int) int {
 	return nums[l]
 }
 
-// binary variation
+// lower bound open
 func findMin2(nums []int) int {
 	l := -1
 	r := len(nums) - 1
