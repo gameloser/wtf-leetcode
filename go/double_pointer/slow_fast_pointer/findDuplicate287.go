@@ -1,4 +1,4 @@
-package slow_fast_pointer
+package main
 
 func findDuplicate2(nums []int) int {
 	m := map[int]int{}
