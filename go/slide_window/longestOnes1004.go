@@ -5,7 +5,7 @@ import "fmt"
 // notice: 枚举，r填一个0, l删一个0
 func longestOnes(nums []int, k int) int {
 	l := 0
-	c0 := 0
+	c0 := 0 // count 0's
 	res := 0
 	for r, num := range nums {
 		c0 += 1 - num
