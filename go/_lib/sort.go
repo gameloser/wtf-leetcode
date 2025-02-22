@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"slices"
 	"sort"
 )
 
@@ -14,6 +15,12 @@ func main() {
 	// sort int
 	numsInt := []int{1, 5, 3, 2}
 	sort.Ints(numsInt)
+	fmt.Println(numsInt)
+	// slices sort
+	numsInt = []int{1, 5, 3, 2}
+	slices.SortFunc(numsInt, func(a, b int) int {
+		return a - b
+	})
 	fmt.Println(numsInt)
 	// reserve
 	sort.Sort(sort.Reverse(sort.IntSlice(numsInt)))
@@ -45,6 +52,15 @@ func main() {
 		return arr2d[i][0] < arr2d[j][0]
 	})
 	fmt.Println(arr2d)
+	arr2d = [][]int{
+		{2, 7},
+		{3, 5},
+		{1, 3},
+	}
+	slices.SortFunc(arr2d, func(a, b []int) int {
+		return a[0] - b[0]
+	})
+	fmt.Println(arr2d)
 
 	// search
 	arr := []int{1, 3, 5, 5, 7, 11, 12, 13}
@@ -61,4 +77,17 @@ func main() {
 	fmt.Println(sort.SearchInts(arr, 0))
 	fmt.Println(sort.SearchInts(arr, 100))
 
+	// sort string
+	str := "overjav"
+	s1 := []byte(str)
+	slices.Sort(s1)
+	sortedStr := string(s1)
+	fmt.Println(sortedStr)
+
+	s2 := []byte(str)
+	sort.Slice(s2, func(i, j int) bool {
+		return s2[i] < s2[j]
+	})
+	sortedStr2 := string(s2)
+	fmt.Println(sortedStr2)
 }
