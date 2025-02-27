@@ -5,9 +5,7 @@ import (
 )
 
 func reverseBetween(head *ListNode, left int, right int) *ListNode {
-	dummyHead := &ListNode{
-		Next: head,
-	}
+	dummyHead := &ListNode{Next: head}
 	p := dummyHead
 	// p at left-1
 	for i := 0; i < left-1; i++ {
