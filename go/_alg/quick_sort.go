@@ -36,7 +36,7 @@ func partition(nums []int) int {
 }
 
 func main() {
-	nums := []int{1, 2, 3, 4, 5, 6, 7, 8, 5}
+	nums := []int{5, 4, 3, 2, 1}
 	//fmt.Println(partition(nums, 0, len(nums)-1))
 	//fmt.Println(nums)
 	quickSort(nums)
