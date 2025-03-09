@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96683c26-67a9-44c5-9124-b62216194b91" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/python/_alg/binary_search.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/_alg/quick_sort.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/sortArray912.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/listed_list/lib/node.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/listed_list/mergeTwoLists21.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/listed_list/middleNode876.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/listed_list/sortList148.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go/_alg/binary_search.md" beforeDir="false" afterPath="$PROJECT_DIR$/python/_alg/binary_search.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go/_alg/quick_sort.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go/_alg/sortArray912.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/_alg/heap_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/_alg/heap_sort.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +47,10 @@
     "Python.heap_sort.executor": "Run",
     "Python.hello.executor": "Run",
     "Python.merge_sort.executor": "Run",
+    "Python.middleNode876.executor": "Run",
     "Python.quick_sort.executor": "Run",
     "Python.sortArray912.executor": "Run",
+    "Python.sortList148.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
@@ -78,10 +76,11 @@
       <recent name="$PROJECT_DIR$/python/_alg" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/python/listed_list/lib" />
       <recent name="$PROJECT_DIR$/python/_alg" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.merge_sort">
+  <component name="RunManager" selected="Python.sortList148">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="wtf-leetcode" />
       <working_directory value="$PROJECT_DIR$" />
@@ -89,15 +88,6 @@
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build wtf-leetcode/_alg" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="wtf-leetcode" />
-      <working_directory value="$PROJECT_DIR$/go" />
-      <kind value="FILE" />
-      <package value="wtf-leetcode/_alg" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/go/_alg/quick_sort.go" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -108,29 +98,6 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <method v="2" />
-    </configuration>
-    <configuration name="binary_search" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="wtf-leetcode" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/_alg" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/_alg/binary_search.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="merge_sort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -148,6 +115,29 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/_alg/merge_sort.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="middleNode876" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="wtf-leetcode" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/listed_list" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/listed_list/middleNode876.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -202,13 +192,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="sortList148" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="wtf-leetcode" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/listed_list" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/listed_list/sortList148.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.sortList148" />
+        <item itemvalue="Python.middleNode876" />
         <item itemvalue="Python.merge_sort" />
         <item itemvalue="Python.quick_sort" />
         <item itemvalue="Python.sortArray912" />
-        <item itemvalue="Go Build.go build wtf-leetcode/_alg" />
-        <item itemvalue="Python.binary_search" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +243,8 @@
       <updated>1741016666158</updated>
       <workItem from="1741016667192" duration="2963000" />
       <workItem from="1741108376331" duration="1995000" />
-      <workItem from="1741182927655" duration="6931000" />
+      <workItem from="1741182927655" duration="7245000" />
+      <workItem from="1741265593551" duration="8431000" />
     </task>
     <servers />
   </component>
@@ -248,15 +262,22 @@
           <line>8</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/python/listed_list/sortList148.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/wtf_leetcode$quick_sort.coverage" NAME="quick_sort Coverage Results" MODIFIED="1741189363715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/_alg" />
+    <SUITE FILE_PATH="coverage/wtf_leetcode$sortList148.coverage" NAME="sortList148 Coverage Results" MODIFIED="1741278170443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/listed_list" />
     <SUITE FILE_PATH="coverage/wtf_leetcode$hello.coverage" NAME="hello Coverage Results" MODIFIED="1741017126885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python" />
     <SUITE FILE_PATH="coverage/wtf_leetcode$heap_sort.coverage" NAME="heap_sort Coverage Results" MODIFIED="1741110384148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/_alg" />
     <SUITE FILE_PATH="coverage/wtf_leetcode$binary_search.coverage" NAME="binary_search Coverage Results" MODIFIED="1741184411349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/_alg" />
-    <SUITE FILE_PATH="coverage/wtf_leetcode$merge_sort.coverage" NAME="merge_sort Coverage Results" MODIFIED="1741190839535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/_alg" />
+    <SUITE FILE_PATH="coverage/wtf_leetcode$merge_sort.coverage" NAME="merge_sort Coverage Results" MODIFIED="1741191034296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/_alg" />
+    <SUITE FILE_PATH="coverage/wtf_leetcode$middleNode876.coverage" NAME="middleNode876 Coverage Results" MODIFIED="1741270250086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/listed_list" />
     <SUITE FILE_PATH="coverage/wtf_leetcode$sortArray912.coverage" NAME="sortArray912 Coverage Results" MODIFIED="1741187491039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python" />
   </component>
 </project>
